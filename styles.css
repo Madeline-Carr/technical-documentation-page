@@ -61,6 +61,8 @@ code{
     background-color: lightgrey; 
     padding: 10px;
     border-radius: 10px; 
+    display: block;
+    width: 80%;
 }
 div{
     padding:20px;
@@ -77,8 +79,9 @@ main{
 a:hover{
     color: dodgerblue;
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+@media only screen and (max-width: 650px) {
+    header{
+        min-height: 160px;
+    
     }
 }

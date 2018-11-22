@@ -19,11 +19,10 @@
     <!-- Naviagtion Bar -->
     <nav id="navbar">
         <h2>Topics in JS</h2>
-        <div><a href="#Control" class="nav-link">Control Flow</a></div>
         <div><a href="#Declarations" class="nav-link">Declarations</a></div>
-        <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
-        <div><a href="#Iterations" class="nav-link">Iterations</a></div>
+        <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Expressions" class="nav-link">Expressions and Statements</a></div>
+        <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
         <div><a href="#Operators" class="nav-link">Operators</a></div>
         <div><a href="#Bindings" class="nav-link">Bindings</a></div>
         <div><a href="#Scope" class="nav-link">Scope</a></div>
@@ -33,56 +32,87 @@
     </nav>
     <!-- Main Section -->
     <main id="main-doc">
-        <section class="main-section" id="Control">
-            <h2>Control Flow</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus aliquid perspiciatis
-                laboriosam, enim, ipsam, deserunt id eveniet dolore voluptas accusantium soluta magni amet. In deleniti
-                iure fugiat dolorum unde?</p>
-            <code>
-                 alert('Hello, world!');
-            </code>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione ut velit laboriosam consequuntur,
-                a illo accusamus voluptates eos optio officia nemo ad laborum similique blanditiis repudiandae,
-                explicabo repellendus? Consequuntur!</p>
-        </section>
+
         <section class="main-section" id="Declarations">
             <h2>Declarations</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus dolorem veniam aliquam quasi
-                qui magni et eveniet officia eum ullam libero iusto inventore, assumenda itaque vel cum fuga beatae.</p>
-            <code>
-                  alert('Hello, world!');
-            </code>
-        </section>
-        <section class="main-section" id="Function">
-            <h2>Functions and Classes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus aliquid perspiciatis
-                laboriosam, enim, ipsam, deserunt id eveniet dolore voluptas accusantium soluta magni amet. In deleniti
-                iure fugiat dolorum unde?</p>
-            <code>
-                     alert('Hello, world!');
+            <hr>
+            <h3>Let</h3>
+            <p>Let has block scope if it is declared in a block and global scope if it is declared outside of a block.
+                Also, it not accessible before it is declared. You can not redeclare the same variable in the same
+                scope.
+                <code>
+                    Ex. Let me = ‘Foo’; 
+                    Let me = ‘Bar’; This would make an error. 
                 </code>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione ut velit laboriosam consequuntur,
-                a illo accusamus voluptates eos optio officia nemo ad laborum similique blanditiis repudiandae,
-                explicabo repellendus? Consequuntur!</p>
-        </section>
-        <section class="main-section" id="Iterations">
-            <h2>Iterations</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus dolorem veniam aliquam quasi
-                qui magni et eveniet officia eum ullam libero iusto inventore, assumenda itaque vel cum fuga beatae.</p>
-            <code>
-                      alert('Hello, world!');
-                </code>
-        </section>
-        <section class="main-section" id="Expressions">
-            <h2>Expressions and Statements</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus dolorem veniam aliquam quasi
-                qui magni et eveniet officia eum ullam libero iusto inventore, assumenda itaque vel cum fuga beatae.</p>
-            <code>
-                 alert('Hello, world!');
-             </code>
+            </p>
+            <h3>Const</h3>
+            <p>Primitives can not be changed. If you make an object with the const keyword its properties and method
+                can still be added, subtracted, or changed. BUT you can not totally reassign the object to be a new
+                object.
+            </p>
+            <h3>Var</h3>
+            <p>Var has function scope if declared in a function and global scope if declared outside of a function.</p>
         </section>
 
+        <section class="main-section" id="Scope">
+            <h2>Scope</h2>
+            <hr>
+            <code>
+             function foo() {
+                // function scope
+                if (condition) {
+                    // block scope
+                  }
+              }
+            </code>
+            <h3>Global Scope</h3>
+            <p>Variables declared Globally (outside any function) have Global Scope. They can be used anywhere in the
+                program.
+            </p>
+            <h3>Function Scope</h3>
+            <p>Variables declared Locally (inside a function) have Function Scope. They can only be used in the
+                function they are declared in.
+            </p>
+            <h3>Block Scope</h3>
+            <p>Variables declared with the var keyword can not have Block Scope. Variables declared inside a
+                block {} can be accessed from outside the block.
+            </p>
+        </section>
+
+        <section class="main-section" id="Expressions">
+            <h2>Expressions and Statements</h2>
+            <hr>
+            <h3>Expressions</h3>
+            <p>Expressions produce a value.
+            </p>
+            <h3>Statements</h3>
+            <ul>
+                <li>if-else
+                </li>
+                <li>while</li>
+                <li>do-while</li>
+                <li>for</li>
+                <li>switch</li>
+                <li>for-in</li>
+                <li>with (deprecated)
+                </li>
+                <li>debuggar</li>
+                <li>variable declaration
+                </li>
+            </ul>
+        </section>
     </main>
+
+    <section class="main-section" id="Function">
+        <h2>Functions and Classes</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus aliquid perspiciatis
+            laboriosam, enim, ipsam, deserunt id eveniet dolore voluptas accusantium soluta magni amet. In deleniti
+            iure fugiat dolorum unde?</p>
+        <code>
+                 alert('Hello, world!');
+        </code>
+    </section>
 
     <!-- Footer -->
     <footer>
