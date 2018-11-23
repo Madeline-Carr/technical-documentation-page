@@ -27,7 +27,11 @@ nav{
     bottom: 80px;
     overflow-y: scroll;
     text-align: center;
-
+}
+h2{
+    color: white;
+    background-color: #333;
+    padding: 10px;
 }
 main{
     grid-column-start: 2;
@@ -77,11 +81,24 @@ main{
     padding: 0 20px 30px 20px;
 }
 a:hover{
-    color: dodgerblue;
+    color: aquamarine;
+}
 
 @media only screen and (max-width: 650px) {
     header{
-        min-height: 160px;
-    
+        min-height: 110px;
+    }
+nav{
+    top: 110px;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    header{
+        min-height: 110px;
+    }
+    nav{
+        top: 110px;
     }
 }

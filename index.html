@@ -19,7 +19,9 @@
     <!-- Naviagtion Bar -->
     <nav id="navbar">
         <h2>Topics in JS</h2>
+        <hr>
         <div><a href="#Declarations" class="nav-link">Declarations</a></div>
+        <div><a href="#Data" class="nav-link">Data Types</a></div>
         <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Expressions" class="nav-link">Expressions and Statements</a></div>
         <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
@@ -52,6 +54,48 @@
             </p>
             <h3>Var</h3>
             <p>Var has function scope if declared in a function and global scope if declared outside of a function.</p>
+        </section>
+
+        <section class="main-section" id="Data">
+            <h2>Data Types</h2>
+
+            <h3>Undefined</h3>
+            <p>When JavaScript variables are declared, they have an initial value of undefined.</p>
+            <h3>Null</h3>
+            <p>Null is a non-existent value or a value that has been set to null.</p>
+            <h3>Boolean</h3>
+            <p>True or False. 1 or 0...</p>
+            <p>Everything that has a value is true and everything that does not is false.</p>
+            <h3>Falsy Values:</h3>
+            <ul>
+                <li>False</li>
+                <li>Null</li>
+                <li>Undefined</li>
+                <li>0</li>
+                <li>NaN</li>
+                <li>" "</li>
+            </ul>
+            <h3>String</h3>
+            <p>Strings contain text.</p>
+            <h3>Number</h3>
+            <p>There are integers, floating point numbers, Infinity, -Infinity, and Nan. For exponents you can
+                write an e. The % symbol gives you the remainder after division.</p>
+            <code>3.14e10  =  31.4
+                            818 % 100 = 18</code>
+            <br>
+            <h3>Symbol</h3>
+            <p>“Symbol” value represents a unique identifier. Symbols allow us to create “hidden” properties of an
+                object, that no other part of code can occasionally access or overwrite.</p>
+            <h3>Object</h3>
+            <p>You can create objects by grouping key value pairs. Arrays and functions are both objects.</p>
+
+            <h3>Type Conversion</h3>
+            <code>Number();</code>
+            <p> Will convert the value into a number. String(); and Boolean(); will convert the value to their type.
+            </p>
+            <h3>Automatic Type Conversion</h3>
+            <p>When null or undefined occurs on either side of the operator, it produces true only if both sides are
+                one of null or undefined.</p>
         </section>
 
         <section class="main-section" id="Scope">
@@ -102,17 +146,6 @@
             </ul>
         </section>
     </main>
-
-    <section class="main-section" id="Function">
-        <h2>Functions and Classes</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus aliquid perspiciatis
-            laboriosam, enim, ipsam, deserunt id eveniet dolore voluptas accusantium soluta magni amet. In deleniti
-            iure fugiat dolorum unde?</p>
-        <code>
-                 alert('Hello, world!');
-        </code>
-    </section>
 
     <!-- Footer -->
     <footer>
