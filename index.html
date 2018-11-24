@@ -24,8 +24,8 @@
         <div><a href="#Data" class="nav-link">Data Types</a></div>
         <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Expressions" class="nav-link">Expressions and Statements</a></div>
-        <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
         <div><a href="#Operators" class="nav-link">Operators</a></div>
+        <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
         <div><a href="#Bindings" class="nav-link">Bindings</a></div>
         <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Math" class="nav-link">Math</a></div>
@@ -43,7 +43,7 @@
                 Also, it not accessible before it is declared. You can not redeclare the same variable in the same
                 scope.
                 <code>
-                    Ex. Let me = ‘Foo’; 
+                    Ex. Let me = ‘Foo’; <br>
                     Let me = ‘Bar’; This would make an error. 
                 </code>
             </p>
@@ -80,7 +80,7 @@
             <h3>Number</h3>
             <p>There are integers, floating point numbers, Infinity, -Infinity, and Nan. For exponents you can
                 write an e. The % symbol gives you the remainder after division.</p>
-            <code>3.14e10  =  31.4
+            <code>3.14e10  =  31.4<br>
                             818 % 100 = 18</code>
             <br>
             <h3>Symbol</h3>
@@ -102,12 +102,12 @@
             <h2>Scope</h2>
             <hr>
             <code>
-             function foo() {
-                // function scope
-                if (condition) {
-                    // block scope
-                  }
-              }
+             function foo() { <br>
+                // function scope <br>
+                if (condition) { <br>
+                    // block scope <br>
+                  } <br>
+              } <br>
             </code>
             <h3>Global Scope</h3>
             <p>Variables declared Globally (outside any function) have Global Scope. They can be used anywhere in the
@@ -144,6 +144,42 @@
                 <li>variable declaration
                 </li>
             </ul>
+        </section>
+        <section class="main-section" id="Operators">
+            <h2>Operators</h2>
+            <hr>
+            <h3>Unary Operators</h3>
+            <p>Some operator like typeof can be use with one operator. The minus symbol can be used both as a Unary or
+                Binary operator.
+            </p>
+            <h3>Comparisons</h3>
+            <p> 3>2 = true; Only one value does not equal itself Nan. So NaN == NaN is false. NOTE: null == null and
+                undefined == undefined. This makes sense with numbers but what about words? Well letters later in the
+                alphabet have higher values. So a is less than b. But! Capitals have lower values. So a capital B is
+                less than a lowercase a. Special characters are even lower.</p>
+            <p>LOW - empty string - Punctuation - Capitals - Lowercase Letters - Later letters - HIGH</p>
+            <h3>Logical Operators</h3>
+            <code>
+                &&- and   (true && false) = false <br>
+                ||- or         (true || false) = false <br>
+                !- not        Flips value.  !true is false.  !false is true. 
+            </code>
+            <h3>Ternary Operator</h3>
+            <p>Condition ? 1 : 2. If the condition is true use the first value if not use the second.
+            </p>
+            <h3>Short-Circuitng of Logical Operators</h3>
+            <p>The || operator, for example, will return the value to its left when that can be converted to true and
+                will return the value on its right otherwise. 
+                Console.log(null || “Hello”); This would log Hello because null is a false value.
+            </p>
+            <p>The && operator works similarly but the other way around. When the value to its left is something that
+                converts to false, it returns that value, and otherwise it returns the value on its right. <br>
+                “"&&"Hello" would return “” and “Something”&&"Hello" would return Hello.
+            </p>
+            <p>In the case of true || X, no matter what Xis—even if it’s a piece of program that does
+                something terrible—the result will be true, and X is never evaluated. The same goes for false && X,
+                which is false and will ignore X. This is called short-circuit evaluation.
+            </p>
         </section>
     </main>
 
