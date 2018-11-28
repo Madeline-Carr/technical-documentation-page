@@ -25,7 +25,7 @@
         <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Expressions" class="nav-link">Expressions and Statements</a></div>
         <div><a href="#Operators" class="nav-link">Operators</a></div>
-        <div><a href="#Functions" class="nav-link">Functions and Classes</a></div>
+        <div><a href="#Functions" class="nav-link">Functions</a></div>
         <div><a href="#Bindings" class="nav-link">Bindings</a></div>
         <div><a href="#Scope" class="nav-link">Scope</a></div>
         <div><a href="#Math" class="nav-link">Math</a></div>
@@ -145,6 +145,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="main-section" id="Operators">
             <h2>Operators</h2>
             <hr>
@@ -180,6 +181,47 @@
                 something terrible—the result will be true, and X is never evaluated. The same goes for false && X,
                 which is false and will ignore X. This is called short-circuit evaluation.
             </p>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <h2>Functions</h2>
+            <hr>
+            <h3>Creating Functions</h3>
+            <p>Functions have the function keyword, parameters, and then a code block. </p>
+            <p>A function is created with parameters and when it is called arguments are passed into the function.</p>
+            <code> function name(x, y){ <br>
+                statements; <br>
+                }</code>
+            <p>Once you make a function to use it you need to call it.</p>
+            <h3>Functions Call</h3>
+            <code>name(myX, myY);</code>
+            <p>This is how you call a function. myX and myY are arguments that are passed into the function. myX would
+                be used inplace of x.</p>
+            <h3>Function Invocation</h3>
+            <p>Function invocation is when the function will be activated.</p>
+            <ul>
+                <li>Event- Caused by an event.</li>
+                <li>Invoked- Invoked by JavaScript.</li>
+                <li>Automatically- Self Invoked.</li>
+            </ul>
+            <h3>Function Return</h3>
+            <p>Return will stop the function and return a value to it. </p>
+            <code>
+                function add(x,y){ <br>
+                    return x+y; <br>
+                } <br>
+                value= add(5,8);<br>
+            </code>
+            <p>Value would equal 13.</p>
+        </section>
+
+        <section class="main-section" id="Bindings">
+            <h2>Bindings</h2>
+            <hr>
+            <h3>Implicit Binding</h3>
+            <p></p>
+            <h3>Explicit Binding</h3>
+            <p></p>
         </section>
     </main>
 
