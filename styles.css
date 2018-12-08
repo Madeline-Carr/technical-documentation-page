@@ -40,6 +40,11 @@ main{
     padding-right: 20px;
     grid-row-start: 2;
 }
+li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
     
 footer{
     background-color: #111;

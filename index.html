@@ -27,7 +27,7 @@
         <div><a href="#Operators" class="nav-link">Operators</a></div>
         <div><a href="#Functions" class="nav-link">Functions</a></div>
         <div><a href="#Bindings" class="nav-link">Bindings</a></div>
-        <div><a href="#Scope" class="nav-link">Scope</a></div>
+        <div><a href="#ArrayMethods" class="nav-link">Array Methods</a></div>
         <div><a href="#Math" class="nav-link">Math</a></div>
         <div><a href="#Arrays" class="nav-link">Arrays</a></div>
         <div><a href="#Other" class="nav-link">Other</a></div>
@@ -230,6 +230,52 @@
             <p>It takes two parameters that are both strings. The first is the question that the user answers. The
                 second is optional and it containes placeholder text. It returns whatever the user inputs. If they
                 input nothing you get an empty string and if they hit cancel you get null.</p>
+        </section>
+
+        <section class="main-section" id="ArrayMethods">
+            <h2>Array Methods</h2>
+            <hr>
+            <h3>Adding and Deleting Items</h3>
+            <ul>
+                <li>pop()</li>
+                <p>Removes the last item and returns its value.</p>
+                <p>No parameters.</p>
+                <li>shift()</li>
+                <p>Removes the first item and returns the removed item.</p>
+                <p>No parameters.</p>
+                <li>push()</li>
+                <p>Adds an item to the end and retuns the new array lenght.</p>
+                <p>The parameters are the items you want to add.</p>
+                <li>unshift()</li>
+                <p>Adds an item to the start and returns the lenght of the array.</p>
+                <li>concat()</li>
+                <p>This can combine two or more arrays. The arrays that you want to add should be passed as arguments.</p>
+                <code>arr1.concat(arr2, arr3);</code>
+                <p>This example would combine 3 arrays.
+                </p>
+                <li>splice()</li>
+                <p>Splice has may parameters. The first is where the new elements should be added and the second is how
+                    many elements should be deleted.</p>
+                <p>For example 2 , 0 would place the elements after the first two and delete no elements.</p>
+                <p>2 , 1 would place them after the first two elements and then delete the third.</p>
+                <p>Every paramater after is an element that will be added.</p>
+                <code>
+                    let heros = ["Superman", "Wonderwoman", "Aquaman"];<br>
+                    heros.splice(1,1, "Batman"); <br>
+                </code>
+                <p>This code will skip the first element which is Superman. Then it will delete one element being
+                    Wonder Woman. Then it will add Batman after Superman. The result would be an array with Superman,
+                    Batman, and Aquaman.</p>
+                <li>slice()</li>
+                <p>Slice will create a new array with parts of an existing array. It does not impact the inital array.</p>
+                <p>Note that the parameters passed into slice represent the keys to the array and not the number of
+                    their position. This means that the first element is 0 and the second is 1. </p>
+                <code>
+                    let arr1 = [1,2,3]; <br>
+                    let arr2 = arr1.slice( 0, 1);<br> 
+                </code>
+                <p>In this example arr1 does not change but arr2 had 1 and 2 in it. </p>
+            </ul>
         </section>
     </main>
 
