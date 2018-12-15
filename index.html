@@ -29,7 +29,7 @@
         <div><a href="#Bindings" class="nav-link">Bindings</a></div>
         <div><a href="#ArrayMethods" class="nav-link">Array Methods</a></div>
         <div><a href="#Math" class="nav-link">Math</a></div>
-        <div><a href="#Arrays" class="nav-link">Arrays</a></div>
+        <div><a href="#Date" class="nav-link">Date</a></div>
         <div><a href="#Other" class="nav-link">Other</a></div>
     </nav>
     <!-- Main Section -->
@@ -299,6 +299,35 @@
                     Math.floor(); <br>
 
                 </code>
+        </section>
+
+        <section class="main-section" id="Date">
+            <h2>Date</h2>
+            <hr>
+            <h3>Making Dates</h3>
+            <p>Date is an object. You can create a date with the Date constructor. It has 7 parameters: year, month,
+                day, hour, minute, second, and millisecond. Dates are stored in milliseconds.</p>
+            <code>let today = new Date(); <br>
+                let d = new Date(2018, 12, 14);
+            </code>
+            <h3>Date Methods</h3>
+            <p>To display a date you need to change it into a string with the toString() method. Or you can use
+                toDateString() which prints is in an easier to read format.</p>
+            <code>console.log(today.toString());</code>
+            <h3>Get Date Methods</h3>
+            <p>There are many ways to get part of a date like getFullYear, getMonth, getDay... These will get you one
+                part of the date. Note that they count from 0. so for getHour you will get a number from 0-23 and for
+                getMonth you will get a number from 0-11.</p>
+            <h3>Set Date Methods</h3>
+            <p>Set Date methods work alot like get Date methods. They set the value of part of a date. The names are
+                the same but they use set instead of
+                get. They still count from 0.</p>
+            <code>
+                var today = new Date(); <br>
+                today.setFullYear(2090); <br>
+            </code>
+            <p>In this example today is set to the current date and then in the next line the year is changed to 2090.</p>
+
         </section>
     </main>
 
