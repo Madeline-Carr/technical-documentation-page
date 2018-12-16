@@ -82,9 +82,17 @@ a{
     color: white;
     font-size: 1.2em;
 }
+
 main{
     padding: 0 20px 30px 20px;
 }
+main a{
+    color: aquamarine;
+}
+main a:hover{
+    color:#333;
+}
+
 a:hover{
     color: aquamarine;
 }

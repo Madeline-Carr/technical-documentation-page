@@ -30,7 +30,7 @@
         <div><a href="#ArrayMethods" class="nav-link">Array Methods</a></div>
         <div><a href="#Math" class="nav-link">Math</a></div>
         <div><a href="#Date" class="nav-link">Date</a></div>
-        <div><a href="#Other" class="nav-link">Other</a></div>
+        <div><a href="#Events" class="nav-link">Events</a></div>
     </nav>
     <!-- Main Section -->
     <main id="main-doc">
@@ -327,6 +327,55 @@
                 today.setFullYear(2090); <br>
             </code>
             <p>In this example today is set to the current date and then in the next line the year is changed to 2090.</p>
+        </section>
+
+        <section class="main-section" id="Events">
+            <h2>Events</h2>
+            <hr>
+            <h3>Events</h3>
+            <p>Events start with the word on. Some common events are onclick, onmouseover, </p>
+            <h3>Event Listeners</h3>
+            <p>Event Listeners allow you to add multiple functions to one event. These functions are added natively.
+                They do not change the value of the event. This makes it faster because the code it read with the rest
+                of the native JavaScript. You can not remove the functions once you made them because they are
+                anonymous. The way to get around this is to make the function outside of the event. </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Here is a list of Events!</a>
+            <h3>How to make an event listeners! </h3>
+            <ol>
+                <li>Target the object. You can do this with document.getElementById('name');</li>
+                <li>Afterward write .addEventListener();.</li>
+                <li>Then add an event without the on part in the (). So onclick would be just click. So it would be
+                    .addEventListener("click");</li>
+                <li>Make the next the parameter the function. Now it would be ("click", function(){console.log("Hello
+                    World!");});</li>
+                <li>To make another event you repeat the eariler steps.</li>
+            </ol>
+            <code>document.getElementById('name').addEventListener("click", function(){console.log("Hello
+                    World!");});<br>
+                    document.getElementById('name').addEventListener("click", function(){console.log("It's me again!");});
+                </code>
+            <h3>Removing an event!</h3>
+            <p>If you made an event outside of the function and you added it then it can be removed!</p>
+            <code> document.getElementById('name').addEventListener("click", helloWorld); //helloWorld is a function outside of the event. <br>
+                document.getElementById('name').removeEventListener("click", helloWorld); //This can delete the function because it has a name
+
+                </code>
+
+            <h3>HTML Events</h3>
+            <p>HTML events are not used much anymore because it is better to have your Javascript all together.</p>
+            <h3>DOM On-Event Handlers</h3>
+            <p>These are better than HTML events but you can only use one function so people tend to prefer event
+                listeners. These events are attached to the object. The reason you can only have one function with this
+                method is because you are changing the object property to a method and there is only one function
+                allowed in a method. In the example below you are changing the onclick property to a method with the
+                function that you are sett ing it equal to.</p>
+            <h3>How to make an Event Handler!</h3>
+            <ol>
+                <li>Select an element. You can do this with document.getElementById('name');</li>
+                <li>Type the name of the event that will trigger the function.</li>
+                <li>Set the element.event equal to the function you want triggerd. NOTE: Do not call the function.</li>
+            </ol>
+            <code>document.getElementById('name').onclick = function(){console.log("Hello World!");};</code>
 
         </section>
     </main>
