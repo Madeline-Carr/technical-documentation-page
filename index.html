@@ -31,6 +31,7 @@
         <div><a href="#Math" class="nav-link">Math</a></div>
         <div><a href="#Date" class="nav-link">Date</a></div>
         <div><a href="#Events" class="nav-link">Events</a></div>
+        <div><a href="#Falsy" class="nav-link">Falsy</a></div>
     </nav>
     <!-- Main Section -->
     <main id="main-doc">
@@ -376,6 +377,25 @@
                 <li>Set the element.event equal to the function you want triggerd. NOTE: Do not call the function.</li>
             </ol>
             <code>document.getElementById('name').onclick = function(){console.log("Hello World!");};</code>
+
+        </section>
+
+        <section class="main-section" id="Events">
+            <h2>Falsy</h2>
+            <hr>
+            <h3>These are always Falsy!!!</h3>
+            <ul>
+                <li>false</li>
+                <li>0</li>
+                <li>""</li>
+                <p>NOTE: An empty arrays, functions, and objects are truthy!</p>
+                <li>null</li>
+                <li>undefined</li>
+                <li>NaN</li>
+            </ul>
+            <p>Anything not on this list is truthy!</p>
+            <p>If you use an if else statement and you have a falsy statement as the condition the else statement will
+                run.</p>
 
         </section>
     </main>
