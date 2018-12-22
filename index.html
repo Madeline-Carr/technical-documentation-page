@@ -397,6 +397,21 @@
             <p>If you use an if else statement and you have a falsy statement as the condition the else statement will
                 run.</p>
 
+            <h3>Loose equality!</h3>
+            <p>true = true</p>
+            <p>These are all equal : false = 0 == "" == []</p>
+            <p>These equal each other and nothing else: null == undefined</p>
+            <p>Infinity == Infinity & -Infinity == -Infinity</p>
+            <p>NaN is not == to anything including itself!!!</p>
+
+            <h3>Strict Equality</h3>
+            <p>The two values must be the same to be true!!!</p>
+            <p>NOTE: The exception is NaN which is still not equal to itself!</p>
+            <code>
+                false === 0; //false <br>
+                NaN === NaN; //false <br>
+                false === false; //true
+            </code>
         </section>
     </main>
 
