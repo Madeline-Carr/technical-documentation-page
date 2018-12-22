@@ -31,7 +31,7 @@
         <div><a href="#Math" class="nav-link">Math</a></div>
         <div><a href="#Date" class="nav-link">Date</a></div>
         <div><a href="#Events" class="nav-link">Events</a></div>
-        <div><a href="#Falsy" class="nav-link">Falsy</a></div>
+        <div><a href="#Truthy" class="nav-link">Truthy and Falsy</a></div>
     </nav>
     <!-- Main Section -->
     <main id="main-doc">
@@ -380,8 +380,8 @@
 
         </section>
 
-        <section class="main-section" id="Events">
-            <h2>Falsy</h2>
+        <section class="main-section" id="Truthy">
+            <h2>Truthy and Falsy</h2>
             <hr>
             <h3>These are always Falsy!!!</h3>
             <ul>
@@ -394,10 +394,8 @@
                 <li>NaN</li>
             </ul>
             <p>Anything not on this list is truthy!</p>
-            <p>If you use an if else statement and you have a falsy statement as the condition the else statement will
-                run.</p>
 
-            <h3>Loose equality!</h3>
+            <h3>Loose Equality</h3>
             <p>true = true</p>
             <p>These are all equal : false = 0 == "" == []</p>
             <p>These equal each other and nothing else: null == undefined</p>
@@ -412,6 +410,23 @@
                 NaN === NaN; //false <br>
                 false === false; //true
             </code>
+
+            <h3>Working with Truthy and Falsy Values</h3>
+            <p>The values can be used as conditions for if statements. If you use an if-else statement and you have a
+                falsy statement as the condition the else statement will
+                run.</p>
+            <code>
+                    if(x){ ... } //This will run if x is truthy. <br>
+                    if(!x){ ... } //This will run if x is falsy. <br>
+                </code>
+            <p>To convert a value to a boolean you can type !!value.</p>
+            <code>
+                    let x = 5; <br>
+                    x = !!x; // x now equals true; <br> 
+                    let y = 0; <br>
+                    y = !!y; // y now equals false; <br>
+                </code>
+
         </section>
     </main>
 
