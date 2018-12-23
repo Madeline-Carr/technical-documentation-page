@@ -32,6 +32,7 @@
         <div><a href="#Date" class="nav-link">Date</a></div>
         <div><a href="#Events" class="nav-link">Events</a></div>
         <div><a href="#Truthy" class="nav-link">Truthy and Falsy</a></div>
+        <div><a href="#Closures" class="nav-link">Closures</a></div>
     </nav>
     <!-- Main Section -->
     <main id="main-doc">
@@ -427,6 +428,25 @@
                     y = !!y; // y now equals false; <br>
                 </code>
 
+        </section>
+
+        <section class="main-section" id="Closures">
+            <h2>Closures</h2>
+            <hr>
+            <p>"A closure is a function having access to the parent scope, even after the parent function has closed."</p>
+            <p>Javascript variables with global scope can be made to have local scope with closures. Global variables
+                belong to the window object.</p>
+            <p>Problem: The counter needs to be inside the function so it can not be changed accidently by other
+                functions. BUT it needs to only be set once because otherwise it will keep resetting back to 0 when the
+                function runs. To solve this you make a closure which will run the code once inside the function.</p>
+            <code>
+                var add = (function () { <br>
+                    var counter = 0; <br>
+                    return function () {counter += 1; return counter} // This function has access to the counter variable.<br>
+                  })();  <br>           
+            </code>
+            <p>The counter can not be changed because it is part of anonymous function so the only thing that can
+                change it is the function inside.</p>
         </section>
     </main>
 
